@@ -17,7 +17,7 @@ public class PacienteResource {
 
     @GetMapping
     public ResponseEntity<Paciente> findAll() {
-        Paciente p = new Paciente("Maria", "maria@gmail.com", "1010", true, Perfil.PACIENTE, "15476621", date, "250854856");
+        Paciente p = new Paciente(null, "Joao", "joao@gmail.com", "1010", true, "15476621", date, "250854856");
         return ResponseEntity.ok().body(p);
     }
 }

@@ -21,7 +21,8 @@ abstract public class Utilizador implements Serializable {
 
     public Utilizador() {}
 
-    public Utilizador(String nome, String email, String passwordHash, boolean ativo, Perfil perfil) {
+    public Utilizador(Long id, String nome, String email, String passwordHash, boolean ativo, Perfil perfil) {
+        this.id = id;
         this.nome = nome;
         this.email = email;
         this.passwordHash = passwordHash;
