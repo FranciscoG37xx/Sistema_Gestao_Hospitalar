@@ -1,4 +1,4 @@
-package com.gestaohospitalar.sistemahospitalar.identidade.model;
+package com.gestaohospitalar.sistemahospitalar.identidade.entities.enums;
 
 public enum Perfil {
     PACIENTE,

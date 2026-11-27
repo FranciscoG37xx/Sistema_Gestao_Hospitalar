@@ -1,5 +1,6 @@
-package com.gestaohospitalar.sistemahospitalar.identidade.model;
+package com.gestaohospitalar.sistemahospitalar.identidade.entities;
 
+import com.gestaohospitalar.sistemahospitalar.identidade.entities.enums.Perfil;
 import jakarta.persistence.Entity;
 
 import java.time.LocalDate;

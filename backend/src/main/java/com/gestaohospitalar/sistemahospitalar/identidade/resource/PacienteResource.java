@@ -1,7 +1,6 @@
 package com.gestaohospitalar.sistemahospitalar.identidade.resource;
 
-import com.gestaohospitalar.sistemahospitalar.identidade.model.Paciente;
-import com.gestaohospitalar.sistemahospitalar.identidade.model.Perfil;
+import com.gestaohospitalar.sistemahospitalar.identidade.entities.Paciente;
 import com.gestaohospitalar.sistemahospitalar.identidade.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -31,4 +29,6 @@ public class PacienteResource {
         Paciente obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
     }
+
+
 }
