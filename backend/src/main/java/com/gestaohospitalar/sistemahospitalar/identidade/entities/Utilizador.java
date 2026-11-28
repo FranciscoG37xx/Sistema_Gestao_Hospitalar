@@ -7,6 +7,8 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+
 abstract public class Utilizador implements Serializable {
     private static final long serialVersionUID = 1L;
 

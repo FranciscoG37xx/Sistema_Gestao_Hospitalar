@@ -1,7 +1,9 @@
 package com.gestaohospitalar.sistemahospitalar.identidade.entities;
 
 import com.gestaohospitalar.sistemahospitalar.identidade.entities.enums.Perfil;
+import jakarta.persistence.Entity;
 
+@Entity
 abstract public class ProfissionalSaude extends Utilizador {
 
     private String numeroCelula;
